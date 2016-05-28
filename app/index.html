@@ -11,6 +11,8 @@
         <!-- styles -->
         <!-- dependencies -->
         <link href='https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="lib/uikit/css/uikit.min.css">
+        <link rel="stylesheet" type="text/css" href="lib/uikit/css/components/sticky.min.css">
         <!-- /dependencies -->
         <link rel="stylesheet" type="text/css" href="styles/index.css">
         <!-- /styles-->
@@ -18,26 +20,65 @@
     <body>
         <div id="content-wrapper">
             <!---->
-            <nav>
-                <ul>
-                    <li></li><!-- brand (avatar) -->
-                    <!-- stackoverflow profile -->
-                    <!-- github profile -->
-                </ul>
-            </nav>
-
-            <div id="content-container">
-                <!---->
+            <div class="uk-container uk-container-center" data-uk-sticky="{ 'top': '#sticky-placeholder', 'animation': 'uk-animation-slide-top', 'showup': true }">
+                <nav id="navbar" class="uk-navbar no-bg">
+                    <a href="" class="uk-navbar-brand">frncsdrk</a>
+                    <ul class="uk-navbar-nav">
+                        <li></li><!-- brand (avatar) -->
+                        <li class="uk-active"><a href="">Who Am I?</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Stackoverflow</a></li><!-- stackoverflow profile -->
+                        <li><a href="">GitHub</a></li><!-- github profile -->
+                    </ul>
+                </nav>
             </div>
 
-            <footer>
+            <div id="content-container uk-container uk-width-medium-1-1">
+                <!---->
+                <div id="whoami" class="uk-height-viewport uk-text-center uk-position-relative">
+                    <h1 class="uk-h1">Who Am I?</h1>
+
+                    <i class="uk-icon-chevron-down uk-icon-large uk-icon-hover uk-container-center uk-position-bottom uk-margin-large pointer"></i>
+                </div>
+                <div id="sticky-placeholder"></div>
+                <div id="projects" class="uk-height-viewport uk-text-center uk-position-relative">
+                    <h1 class="uk-h1">Projects</h1>
+
+                    <i class="uk-icon-chevron-down uk-icon-large uk-icon-hover uk-container-center uk-position-bottom uk-margin-large pointer"></i>
+                </div>
+                <div id="blog" class="uk-height-viewport uk-text-center">
+                    <h1 class="uk-h1">Blog</h1>
+                </div>
+            </div>
+
+            <footer class="uk-block uk-block-large uk-block-muted">
                 <!-- used open source projects -->
+                <div class="uk-float-left uk-margin-left uk-margin-right">
+                    <ul class="uk-list uk-list-line">
+                        <li><a href="">UIkit</a></li>
+                        <li><a href="">jQuery</a></li>
+                        <li><a href="">Knockout.js</a></li>
+                        <li><a href="">Mustache</a></li>
+                        <li><a href="">ko.mustache.js</a></li>
+                        <li><a href="">Prism.js</a></li>
+                    </ul>
+                </div>
                 <!-- social media -->
+                <div class="uk-float-left">
+                    <ul class="uk-list uk-list-line uk-float-left uk-margin-left uk-margin-right">
+                        <li><a href="">Stackoverflow</a></li>
+                        <li><a href="">GitHub</a></li>
+                    </ul>
+                </div>
             </footer>
         </div>
 
         <!-- scripts -->
         <!-- dependencies -->
+        <script type="text/javascript" src="lib/jquery-v2.2.4.min.js"></script>
+        <script type="text/javascript" src="lib/uikit/js/uikit.min.js"></script>
+        <script type="text/javascript" src="lib/uikit/js/components/sticky.min.js"></script>
         <!-- /dependencies -->
         <!-- /scripts -->
     </body>

@@ -5,3 +5,22 @@ body {
     padding: 0;
     font-family: "Open Sans", Helvetica, sans-serif;
 }
+
+#navbar {}
+#navbar ul {
+    list-style-type: none;
+}
+#navbar li {
+    float: left;
+}
+#navbar a {}
+
+.pointer {
+    cursor: pointer;
+}
+.transparent {
+    opacity: 0;
+}
+.no-bg {
+    background: none;
+}
