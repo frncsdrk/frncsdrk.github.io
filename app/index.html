@@ -11,8 +11,10 @@
         <!-- styles -->
         <!-- dependencies -->
         <link href='https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Source+Sans+Pro' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="lib/uikit/css/uikit.min.css">
-        <link rel="stylesheet" type="text/css" href="lib/uikit/css/components/sticky.min.css">
+        <!--<link rel="stylesheet" type="text/css" href="lib/uikit/css/uikit.min.css">
+        <link rel="stylesheet" type="text/css" href="lib/uikit/css/components/sticky.min.css">-->
+        <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="lib/spectre/spectre.min.css">
         <!-- /dependencies -->
         <link rel="stylesheet" type="text/css" href="styles/index.css">
         <!-- /styles-->
@@ -20,65 +22,75 @@
     <body>
         <div id="content-wrapper">
             <!---->
-            <div class="uk-container uk-container-center" data-uk-sticky="{ 'top': '#sticky-placeholder', 'animation': 'uk-animation-slide-top', 'showup': true }">
-                <nav id="navbar" class="uk-navbar no-bg">
-                    <a href="" class="uk-navbar-brand">frncsdrk</a>
-                    <ul class="uk-navbar-nav">
-                        <li></li><!-- brand (avatar) -->
-                        <li class="uk-active"><a href="">Who Am I?</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Stackoverflow</a></li><!-- stackoverflow profile -->
-                        <li><a href="">GitHub</a></li><!-- github profile -->
-                    </ul>
-                </nav>
-            </div>
 
-            <div id="content-container uk-container uk-width-medium-1-1">
+            <header class="navbar">
+                <section class="navbar-section">
+                    <a href=""><i></i></a>
+                    <a href="" class="navbar-brand">frncsdrk</a>
+                </section>
+                <section class="navbar-section">
+                    <a href="#whoami" class="btn btn-link">Who Am I?</a>
+                    <a href="#projects" class="btn btn-link">Projects</a>
+                    <a href="#blog" class="btn btn-link">Blog</a>
+                    <a href="" class="btn btn-link"><i class="icon fa fa-stack-exchange"></i> Stack Exchange</a>
+                    <a href="" class="btn btn-link"><i class="icon fa fa-github"></i> GitHub</a>
+                </section>
+            </header>
+
+            <div id="content-container" class="container grid-960">
                 <!---->
-                <div id="whoami" class="uk-height-viewport uk-text-center uk-position-relative">
-                    <h1 class="uk-h1">Who Am I?</h1>
+                <div id="whoami" class="column col-12 viewport-height relative">
+                    <h1 class="text-center">Who Am I?</h1>
 
-                    <i class="uk-icon-chevron-down uk-icon-large uk-icon-hover uk-container-center uk-position-bottom uk-margin-large pointer"></i>
+                    <a href="#projects" class="position-bottom icon-center text-center"><i class="fa fa-chevron-down fa-3x pointer"></i></a>
                 </div>
-                <div id="sticky-placeholder"></div>
-                <div id="projects" class="uk-height-viewport uk-text-center uk-position-relative">
-                    <h1 class="uk-h1">Projects</h1>
+                <div id="projects" class="column col-12 viewport-height relative">
+                    <h1 class="text-center">Projects</h1>
 
-                    <i class="uk-icon-chevron-down uk-icon-large uk-icon-hover uk-container-center uk-position-bottom uk-margin-large pointer"></i>
+                    <a href="#blog" class="position-bottom icon-center text-center"><i class="fa fa-chevron-down fa-3x pointer"></i></a>
                 </div>
-                <div id="blog" class="uk-height-viewport uk-text-center">
-                    <h1 class="uk-h1">Blog</h1>
+                <div id="blog" class="column col-12 viewport-height">
+                    <h1 class="text-center">Blog</h1>
                 </div>
             </div>
 
-            <footer class="uk-block uk-block-large uk-block-muted">
-                <!-- used open source projects -->
-                <div class="uk-float-left uk-margin-left uk-margin-right">
-                    <ul class="uk-list uk-list-line">
-                        <li><a href="">UIkit</a></li>
-                        <li><a href="">jQuery</a></li>
-                        <li><a href="">Knockout.js</a></li>
-                        <li><a href="">Mustache</a></li>
-                        <li><a href="">ko.mustache.js</a></li>
-                        <li><a href="">Prism.js</a></li>
-                    </ul>
-                </div>
-                <!-- social media -->
-                <div class="uk-float-left">
-                    <ul class="uk-list uk-list-line uk-float-left uk-margin-left uk-margin-right">
-                        <li><a href="">Stackoverflow</a></li>
-                        <li><a href="">GitHub</a></li>
-                    </ul>
-                </div>
-            </footer>
+            <section class="section bg-grey">
+                <footer id="footer">
+                    <!-- used open source projects -->
+                    <div class="float-left">
+                        <ul class="">
+                            <li><a href="">Spectre.css</a></li>
+                            <li><a href="">Font Awesome</a></li>
+                            <li><a href="">jQuery</a></li>
+                            <li><a href="">Knockout.js</a></li>
+                            <li><a href="">Mustache</a></li>
+                            <li><a href="">ko.mustache.js</a></li>
+                            <li><a href="">Prism.js</a></li>
+                            <li><a href="https://css-tricks.com/snippets/jquery/smooth-scrolling/">Smooth Scroll</a></li>
+                        </ul>
+                    </div>
+                    <!-- social media -->
+                    <div class="float-left">
+                        <ul class="">
+                            <li><a href="">Stackoverflow</a></li>
+                            <li><a href="">GitHub</a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </section>
+
+            <!-- scroll up-->
+            <div class="scrollup">
+                <a href=""><i class="fa fa-chevron-up fa-3x pointer"></i></a>
+            </div>
         </div>
 
         <!-- scripts -->
         <!-- dependencies -->
         <script type="text/javascript" src="lib/jquery-v2.2.4.min.js"></script>
-        <script type="text/javascript" src="lib/uikit/js/uikit.min.js"></script>
-        <script type="text/javascript" src="lib/uikit/js/components/sticky.min.js"></script>
+        <script type="text/javascript" src="lib/smooth-scroll.js"></script>
+        <!--<script type="text/javascript" src="lib/uikit/js/uikit.min.js"></script>
+        <script type="text/javascript" src="lib/uikit/js/components/sticky.min.js"></script>-->
         <!-- /dependencies -->
         <!-- /scripts -->
     </body>
