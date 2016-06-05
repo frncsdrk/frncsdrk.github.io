@@ -17,6 +17,7 @@
         <link rel="stylesheet" type="text/css" href="lib/spectre/spectre.min.css">
         <!-- /dependencies -->
         <link rel="stylesheet" type="text/css" href="styles/index.css">
+        <link rel="stylesheet" type="text/css" href="styles/pano.css">
         <!-- /styles-->
     </head>
     <body>
@@ -31,9 +32,9 @@
                 <section class="navbar-section">
                     <a href="#whoami" class="btn btn-link">Who Am I?</a>
                     <a href="#projects" class="btn btn-link">Projects</a>
-                    <a href="#blog" class="btn btn-link">Blog</a>
-                    <a href="" class="btn btn-link"><i class="icon fa fa-stack-exchange"></i> Stack Exchange</a>
-                    <a href="" class="btn btn-link"><i class="icon fa fa-github"></i> GitHub</a>
+                    <a href="#blog" class="btn btn-link">Recommendations</a>
+                    <a href="http://stackoverflow.com/users/4540647/frncsdrk" class="btn btn-link" target="_blank"><i class="icon fa fa-stack-exchange"></i> Stack Exchange</a>
+                    <a href="https://github.com/frncsdrk" class="btn btn-link" target="_blank"><i class="icon fa fa-github"></i> GitHub</a>
                 </section>
             </header>
 
@@ -42,18 +43,35 @@
                 <div id="whoami" class="column col-12 viewport-height relative">
                     <h1 class="text-center">Who Am I?</h1>
 
+                    <!--
                     <ul class="tab tab-block">
                         <li class="tab-item active">
                             <a href="">Web Developer</a>
                         </li>
                         <li class="tab-item">
-                            <a href="">Game Enthusiast</a>
+                            <a href="">Creator</a>
                         </li>
                         <li class="tab-item">
-                            <a href="">I can help you out!</a>
+                            <a href="">Game Enthusiast</a>
                         </li>
                     </ul>
+                    -->
                     <!-- TODO: create helper -->
+
+                    <div class="pano">
+                        <div class="pano-item pano-active">
+                            <h1 class="pano-title">Web Developer</h1>
+                            <p>I work as a Web Developer creating and maintaining buisiness applications.</p>
+                        </div>
+                        <div class="pano-item">
+                            <h1 class="pano-title">Creator</h1>
+                            <p>I love to create things and programming is my way of achieving this.</p>
+                        </div>
+                        <div class="pano-item">
+                            <h1 class="pano-title">Game Enthusiast</h1>
+                            <p>Gaming brought me to programming and I am still fascinated by the fantastic worlds that are created by such talented people.</p>
+                        </div>
+                    </div>
 
                     <a href="#projects" class="position-bottom icon-center text-center"><i class="fa fa-chevron-down fa-3x pointer"></i></a>
                 </div>
@@ -64,21 +82,22 @@
                         <div class="column col-6">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title">Streaks</h4>
-                                    <h6 class="card-meta">Track your streaks!</h6>
+                                    <h4 class="card-title">bespoke-theme-sea</h4>
+                                    <h6 class="card-meta">A theme as blue as the sea for Bespoke.js</h6>
                                 </div>
                                 <div class="card-image">
-                                    <img src="" class="img-responsive">
+                                    <!--<img src="" class="img-responsive">-->
                                 </div>
                                 <div class="card-body">
-                                    Track your GitHub streaks! Not only commits, but also pull requests, issues and more!
+                                    <!---->
                                 </div>
                                 <div class="card-footer">
-                                    <button class="btn btn-primary">Visit</button>
+                                    <a href="https://github.com/frncsdrk/bespoke-theme-sea" class="btn btn-primary" target="_blank">Visit</a>
                                 </div>
                             </div>
                         </div>
-
+                        
+                        <!--
                         <div class="column col-6">
                             <div class="card">
                                 <div class="card-header">
@@ -96,28 +115,29 @@
                                 </div>
                             </div>
                         </div>
+                        -->
                     </div>
 
                     <a href="#blog" class="position-bottom icon-center text-center"><i class="fa fa-chevron-down fa-3x pointer"></i></a>
                 </div>
                 <div id="blog" class="column col-12 viewport-height">
-                    <h1 class="text-center">Blog</h1>
+                    <h1 class="text-center">Recommendations</h1>
 
                     <div class="columns">
                         <div class="column column-6">
                             <div class="empty">
-                                <i class="fa fa-pencil"></i>
-                                <p class="empty-title">Star Wars The Force Awakens</p>
-                                <p class="empty meta">A bad review</p>
-                                <button class="btn btn-primary">Read</button>
+                                <i class="fa fa-medium"></i>
+                                <p class="empty-title">The Future of Work in 5 Charts</p>
+                                <p class="empty meta">"5 charts that show you the future of work"</p>
+                                <a href="https://medium.com/conquering-corporate-america/the-future-of-work-in-5-charts-a4d8baf9f068#.q7y4aeiai" class="btn btn-primary" target="_blank">Read</a>
                             </div>
                         </div>
                         <div class="column column-6">
                             <div class="empty">
-                                <i class="fa fa-pencil"></i>
-                                <p class="empty-title">Star Wars The Force Awakens</p>
-                                <p class="empty meta">A bad review</p>
-                                <button class="btn btn-primary">Read</button>
+                                <i class="fa fa-github"></i>
+                                <p class="empty-title">bespoke.js</p>
+                                <p class="empty meta">DIY Presentation Micro-Framework</p>
+                                <a href="https://github.com/bespokejs/bespoke" class="btn btn-primary" target="_blank">Read</a>
                             </div>
                         </div>
                     </div>
@@ -129,21 +149,21 @@
                     <!-- used open source projects -->
                     <div class="float-left">
                         <ul class="">
-                            <li><a href="">Spectre.css</a></li>
-                            <li><a href="">Font Awesome</a></li>
-                            <li><a href="">jQuery</a></li>
-                            <li><a href="">Knockout.js</a></li>
-                            <li><a href="">Mustache</a></li>
-                            <li><a href="">ko.mustache.js</a></li>
-                            <li><a href="">Prism.js</a></li>
+                            <li><a href="https://picturepan2.github.io/spectre" target="_blank">Spectre.css</a></li>
+                            <li><a href="http://fontawesome.io" target="_blank">Font Awesome</a></li>
+                            <li><a href="http://jquery.com" target="_blank">jQuery</a></li>
+                            <!--<li><a href="http://knockoutjs.com" target="_blank">Knockout.js</a></li>
+                            <li><a href="https://mustache.github.io/" target="_blank">Mustache</a></li>
+                            <li><a href="https://github.com/WTK/ko.mustache.js" target="_blank">ko.mustache.js</a></li>
+                            <li><a href="http://prismjs.com" target="_blank">Prism.js</a></li>-->
                             <li><a href="https://css-tricks.com/snippets/jquery/smooth-scrolling/">Smooth Scroll</a></li>
                         </ul>
                     </div>
                     <!-- social media -->
                     <div class="float-left">
                         <ul class="">
-                            <li><a href="">Stackoverflow</a></li>
-                            <li><a href="">GitHub</a></li>
+                            <li><a href="" target="_blank">Stackoverflow</a></li>
+                            <li><a href="" target="_blank">GitHub</a></li>
                         </ul>
                     </div>
                 </footer>
@@ -162,6 +182,7 @@
         <!--<script type="text/javascript" src="lib/uikit/js/uikit.min.js"></script>
         <script type="text/javascript" src="lib/uikit/js/components/sticky.min.js"></script>-->
         <!-- /dependencies -->
+        <script type="text/javascript" src="scripts/pano.js"></script>
         <!-- /scripts -->
     </body>
 </html>
