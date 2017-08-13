@@ -1,2 +1,2 @@
 # frncsdrk.github.io
-my profile
+profile and blog
