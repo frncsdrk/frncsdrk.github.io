@@ -27,6 +27,8 @@ body {
 #panel {
     margin: 75px 0 0 0;
     color: #fff;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .padding-10 {
