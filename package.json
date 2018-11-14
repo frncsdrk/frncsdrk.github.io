@@ -8,6 +8,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "spectre.css": "^0.5.3"
+    "spectre.css": "^0.5.5"
   }
 }
