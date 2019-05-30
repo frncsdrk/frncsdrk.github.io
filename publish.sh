@@ -3,5 +3,5 @@
 # publish
 npm run build
 printf '%s\n' "BUILT"
-git subtree push --prefix public origin gh-pages
+git subtree push --prefix public origin master
 printf '%s\n' "PUBLISHED"
