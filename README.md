@@ -2,6 +2,12 @@
 
 my profile
 
+## Publishing
+
+- `npm run build`
+- commit changes to develop
+- `./publish.sh`
+
 ## Scripts
 
 ### `npm run dev`
