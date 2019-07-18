@@ -1,10 +1,9 @@
 ---
-title: The key to success in projects
-layout: post
+title: the key to success in projects
 date: 2018-11-11 17:14:00
 tags:
-  - projects
-  - success
+    - projects
+    - success
 ---
 
 1. start simple

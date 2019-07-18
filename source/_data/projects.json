@@ -1,0 +1,22 @@
+[
+    {
+       "name":"avatar",
+       "url":"https://github.com/frncsdrk/avatar",
+       "desc":"microservice for creating a random avatar"
+    },
+    {
+       "name":"bespoke-theme-sea",
+       "url":"https://github.com/frncsdrk/bespoke-theme-sea",
+       "desc":"A theme as blue as the sea for Bespoke.js"
+    },
+    {
+        "name":"supa.sh",
+        "url":"https://github.com/frncsdrk/supa.sh",
+        "desc":"bash tool to update debian-based linux machines, also means soup in Greek"
+     },
+     {
+        "name":"dcc.sh",
+        "url":"https://github.com/frncsdrk/dcc.sh",
+        "desc":"docker compose companion"
+     }
+]

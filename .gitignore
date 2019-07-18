@@ -1,9 +1,7 @@
-node_modules
-.idea
-*.log
 .DS_Store
-
-# Saber output
-# public
-.saber
-
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
