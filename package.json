@@ -23,6 +23,6 @@
     "hexo-server": "^2.0.0"
   },
   "devDependencies": {
-    "hexo-cli": "^4.2.0"
+    "hexo-cli": "^4.3.0"
   }
 }
