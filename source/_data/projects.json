@@ -1,21 +1,21 @@
 [
     {
-       "name":"avatar",
+       "name":"frncsdrk/avatar",
        "url":"https://github.com/frncsdrk/avatar",
        "desc":"microservice for creating a random avatar"
     },
     {
-       "name":"bespoke-theme-sea",
-       "url":"https://github.com/frncsdrk/bespoke-theme-sea",
-       "desc":"A theme as blue as the sea for Bespoke.js"
+       "name":"randomgoods/node-image-libs",
+       "url":"https://github.com/randomgoods/node-image-libs",
+       "desc":"Node container images including libraries for image editing"
     },
     {
-        "name":"supa.sh",
+        "name":"frncsdrk/supa.sh",
         "url":"https://github.com/frncsdrk/supa.sh",
         "desc":"bash tool to update debian-based linux machines, also means soup in Greek"
      },
      {
-        "name":"dcc.sh",
+        "name":"frncsdrk/dcc.sh",
         "url":"https://github.com/frncsdrk/dcc.sh",
         "desc":"docker compose companion"
      }
