@@ -2,6 +2,13 @@
 
 my profile
 
+## Development
+
+### Setup
+
+- Run `npm i`
+- Run `git submodule update --init --recursive` to checkout al submodules
+
 ## Publishing
 
 - `npm run build`
