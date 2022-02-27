@@ -28,3 +28,9 @@ Create a production build of the website, the generated files can be found at `.
 ### Update submodules
 
 Run `git submodule foreach git pull origin master`
+
+## License
+
+[MIT](License) (c) 2016 - 2022 frncsdrk
+
+[License]: ./LICENSE
