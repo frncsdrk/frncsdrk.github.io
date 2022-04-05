@@ -2,7 +2,7 @@
     {
        "name":"frncsdrk/avatar",
        "url":"https://github.com/frncsdrk/avatar",
-       "desc":"microservice for creating a random avatar"
+       "desc":"Self-hosted service for creating random avatars"
     },
     {
        "name":"randomgoods/node-image-libs",
@@ -10,13 +10,13 @@
        "desc":"Node container images including libraries for image editing"
     },
     {
-        "name":"frncsdrk/supa.sh",
-        "url":"https://github.com/frncsdrk/supa.sh",
-        "desc":"bash tool to update debian-based linux machines, also means soup in Greek"
+        "name":"frncsdrk/zenpage",
+        "url":"https://github.com/frncsdrk/zenpage",
+        "desc":"Ground yourself and start a new journey"
      },
      {
-        "name":"frncsdrk/dcc.sh",
-        "url":"https://github.com/frncsdrk/dcc.sh",
-        "desc":"docker compose companion"
+        "name":"frncsdrk/renaissance",
+        "url":"https://github.com/frncsdrk/renaissance",
+        "desc":"Structure your apps"
      }
 ]
