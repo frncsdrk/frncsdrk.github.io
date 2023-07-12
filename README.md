@@ -13,7 +13,7 @@ my profile
 
 - `npm run build`
 - commit changes to develop
-- `./publish.sh`
+- `./publish`
 
 ## Scripts
 
