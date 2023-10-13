@@ -31,6 +31,6 @@ Run `git submodule foreach git pull origin master`
 
 ## License
 
-[MIT](License) (c) 2016 - 2022 frncsdrk
+[MIT](License) (c) 2016 - 2023 frncsdrk
 
 [License]: ./LICENSE
