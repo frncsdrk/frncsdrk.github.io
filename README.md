@@ -1,33 +1,28 @@
 # frncsdrk.github.io
 
-my profile
+> my profile
+
+Personal websiten built with astro
 
 ## Development
 
 ### Setup
 
 - Run `npm i`
-- Run `git submodule update --init --recursive` to checkout al submodules
 
 ## Publishing
 
-- `npm run build`
-- commit changes to develop
-- `./publish`
+The site is published whenever changes are pushed to the `main` branch.
 
 ## Scripts
 
-### `npm run serve`
+### `npm start` and `npm run dev`
 
 Run the website locally.
 
 ### `npm run build`
 
-Create a production build of the website, the generated files can be found at `./public` folder, you can [deploy it as a static website].
-
-### Update submodules
-
-Run `git submodule foreach git pull origin master`
+Create a production build of the website, the generated files can be found in the `./dist` directory, which you can [deploy as a static website].
 
 ## License
 
