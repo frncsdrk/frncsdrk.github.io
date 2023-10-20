@@ -12,7 +12,8 @@ Personal websiten built with astro
 
 ## Publishing
 
-The site is published whenever changes are pushed to the `main` branch.
+The site is published whenever changes are pushed to the `main` branch via GH workflow.
+This works best when done by merging the `develop` branch.
 
 ## Scripts
 
