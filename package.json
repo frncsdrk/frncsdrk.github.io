@@ -1,6 +1,6 @@
 {
-	"name": "astro",
-	"version": "3.5.0",
+	"name": "frncsdrk.github.io",
+	"version": "2.0.1",
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
@@ -10,6 +10,7 @@
 		"format": "prettier -w --cache .",
 		"check": "astro check"
 	},
+    "private": true,
 	"dependencies": {
 		"@astrojs/mdx": "^1.1.2",
 		"@astrojs/prefetch": "^0.4.1",
