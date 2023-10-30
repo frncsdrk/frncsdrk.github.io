@@ -2,13 +2,13 @@
 
 > my profile
 
-Personal websiten built with astro
+Personal website built with astro
 
 ## Development
 
 ### Setup
 
-- Run `npm i`
+- Run `pnpm i`
 
 ## Publishing
 
@@ -17,11 +17,11 @@ This works best when done by merging the `develop` branch.
 
 ## Scripts
 
-### `npm start` and `npm run dev`
+### `pnpm start` and `pnpm run dev`
 
 Run the website locally.
 
-### `npm run build`
+### `pnpm run build`
 
 Create a production build of the website, the generated files can be found in the `./dist` directory, which you can [deploy as a static website].
 
