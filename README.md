@@ -4,6 +4,8 @@
 
 Personal website built with astro
 
+[![CI](https://github.com/frncsdrk/frncsdrk.github.io/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/frncsdrk/frncsdrk.github.io/actions/workflows/ci.yml)
+
 ## Development
 
 ### Setup
