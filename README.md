@@ -29,6 +29,4 @@ Create a production build of the website, the generated files can be found in th
 
 ## License
 
-[MIT](License) (c) 2016 - 2023 frncsdrk
-
-[License]: ./LICENSE
+[MIT](https://github.com/frncsdrk/frncsdrk.github.io/blob/main/LICENSE) (c) 2016 - 2023 frncsdrk
