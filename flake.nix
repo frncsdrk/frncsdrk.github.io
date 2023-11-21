@@ -1,26 +1,32 @@
 {
-  description = "A Nix-flake-based Node.js development environment";
+  description = "Development environment";
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+  inputs = {
+    nixpkgs = {
+      url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    };
+  };
 
   outputs = { self, nixpkgs }:
     let
-      overlays = [
-        (final: prev: rec {
-          nodejs = prev.nodejs-18_x;
-          pnpm = prev.nodePackages.pnpm;
-        })
-      ];
-      supportedSystems = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
-      forEachSupportedSystem = f: nixpkgs.lib.genAttrs supportedSystems (system: f {
-        pkgs = import nixpkgs { inherit overlays system; };
-      });
-    in
-    {
-      devShells = forEachSupportedSystem ({ pkgs }: {
-        default = pkgs.mkShell {
-          packages = with pkgs; [ node2nix nodejs pnpm ];
-        };
-      });
+      supportedSystems = [ "x86_64-linux" ];
+      # Helper function to generate an attrset '{ x86_64-linux = f "x86_64-linux"; ... }'.
+      eachSystem = nixpkgs.lib.genAttrs supportedSystems;
+      # Nixpkgs instantiated for supported system types.
+      nixpkgsFor = eachSystem (system: import nixpkgs { inherit system; });
+    in {
+      # Dev dependencies
+      devShells = eachSystem (system:
+        let 
+          pkgs = nixpkgsFor.${system};
+        in
+        {
+          default = pkgs.mkShell {
+            buildInputs = with pkgs; [
+              nodejs_20
+              nodePackages.pnpm
+            ];
+          };
+        });
     };
 }
