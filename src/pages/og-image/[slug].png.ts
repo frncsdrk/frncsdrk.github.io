@@ -1,10 +1,11 @@
 import type { APIContext, GetStaticPaths } from "astro";
-import { getEntryBySlug } from "astro:content";
+import { getEntry } from "astro:content";
 import satori, { type SatoriOptions } from "satori";
 import { html } from "satori-html";
 import { Resvg } from "@resvg/resvg-js";
 import { siteConfig } from "@/site-config";
-import { getAllPosts, getFormattedDate } from "@/utils/post";
+import { getAllPosts } from "@/utils/post";
+import { getFormattedDate } from "@/utils/date";
 
 import RobotoMono from "@/assets/roboto-mono-regular.ttf";
 import RobotoMonoBold from "@/assets/roboto-mono-700.ttf";
@@ -59,7 +60,7 @@ const markup = (title: string, pubDate: string) =>
 	</div>`;
 
 export async function GET({ params: { slug } }: APIContext) {
-	const post = await getEntryBySlug("post", slug!);
+	const post = await getEntry("post", slug!);
 	const title = post?.data.title ?? siteConfig.title;
 	const postDate = getFormattedDate(
 		post?.data.updatedDate ?? post?.data.publishDate ?? Date.now(),
@@ -80,5 +81,5 @@ export async function GET({ params: { slug } }: APIContext) {
 
 export const getStaticPaths: GetStaticPaths = async () => {
 	const posts = await getAllPosts();
-	return posts.filter(({ data }) => !data.ogImage).map(({ slug }) => ({ params: { slug } }));
+	return posts.filter(({ data }) => !data.ogImage).map(({ id }) => ({ params: { id } }));
 };
