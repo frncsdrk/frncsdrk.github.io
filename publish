@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #
 # publish
-git subtree push --prefix dist origin main
+git subtree push --prefix dist gh main
 printf '%s\n' "PUBLISHED"
